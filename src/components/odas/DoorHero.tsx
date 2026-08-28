@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform, useSpring } from "motion/react";
+import { motion, useScroll, useTransform, useSpring, type MotionValue } from "motion/react";
 import { useRef } from "react";
 import entrance from "@/assets/synapse-entrance.png.asset.json";
 
@@ -8,8 +8,8 @@ function Panel({
   x,
 }: {
   side: "left" | "right";
-  scale: ReturnType<typeof useTransform<number, number>>;
-  x: ReturnType<typeof useTransform<number, number>>;
+  scale: MotionValue<number>;
+  x: MotionValue<string>;
 }) {
   return (
     <motion.div
