@@ -155,6 +155,8 @@ export function Journey() {
                 <br />
                 <span className="text-primary">{s.t[1]}</span>
               </h3>
+              <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-foreground/50">{s.s}</p>
+
             </article>
           ))}
         </motion.div>
