@@ -167,7 +167,7 @@ export function Journey() {
 
 /* ---------------- SECTION 4 — THE SYNAPSE WAY ---------------- */
 
-const steps = ["Insight", "Strategy", "Storytelling", "Execution", "Big Idea"];
+const steps = ["Science", "Insight", "Strategy", "Storytelling", "Execution", "Impact"];
 
 export function SynapseWay() {
   const ref = useRef<HTMLDivElement>(null);
@@ -179,9 +179,15 @@ export function SynapseWay() {
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
           <h2 className="display max-w-4xl text-[12vw] md:text-[6vw]">
-            How does an idea become <span className="text-primary">a campaign?</span>
+            How does a healthcare or pharma idea become{" "}
+            <span className="text-primary">a campaign?</span>
           </h2>
+          <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+            From clinical evidence and healthcare insights to campaigns that engage doctors,
+            patients, caregivers and health consumers.
+          </p>
         </Reveal>
+
 
         <div ref={ref} className="relative mt-20 pl-10 md:mt-32 md:pl-[22%]">
           <div className="absolute left-1 top-0 h-full w-px bg-hairline md:left-[calc(22%-2.5rem)]">
