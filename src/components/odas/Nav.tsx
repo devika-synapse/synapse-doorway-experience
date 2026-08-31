@@ -5,7 +5,10 @@ const links = [
   { label: "ODAS", href: "#odas" },
   { label: "The Experience", href: "#experience" },
   { label: "The Journey", href: "#journey" },
+  { label: "Our World", href: "#world" },
+  { label: "Our People", href: "#people" },
 ];
+
 
 export function Nav({ onApply }: { onApply: () => void }) {
   const [solid, setSolid] = useState(false);

@@ -26,10 +26,11 @@ export function Reveal({
 /* ---------------- SECTION 2 — WHAT IS ODAS ---------------- */
 
 const statements = [
-  ["Explore", "AI"],
-  ["Meet specialists", "across functions"],
-  ["Understand", "campaigns"],
-  ["Experience", "execution"],
+  ["See how healthcare", "campaigns are built"],
+  ["See how pharma", "brands are positioned"],
+  ["See how science", "becomes story"],
+  ["See how AI is", "changing healthcare marketing"],
+  ["See how ideas", "move into execution"],
 ];
 
 export function WhatIsOdas() {
@@ -47,12 +48,14 @@ export function WhatIsOdas() {
           <div className="md:col-span-4 md:col-start-8">
             <Reveal delay={0.1}>
               <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
-                One Day at Synapse is an immersive experience designed to take visitors inside the
-                thinking, strategy and execution behind marketing campaigns.
+                One Day at Synapse is an immersive experience inside a healthcare and pharma
+                advertising agency — where science meets strategy, creativity meets technology, and
+                insights become campaigns.
               </p>
             </Reveal>
           </div>
         </div>
+
 
         <ul className="mt-20 border-t border-hairline md:mt-32">
           {statements.map(([a, b], i) => (
@@ -86,12 +89,33 @@ export function WhatIsOdas() {
 /* ---------------- SECTION 3 — THE JOURNEY ---------------- */
 
 const sessions = [
-  { n: "01", t: ["Master the art of writing briefs", "that inspire great work"] },
-  { n: "02", t: ["Learn how to turn", "market research into an insight"] },
-  { n: "03", t: ["Master the principles behind", "effective campaign strategy"] },
-  { n: "04", t: ["Understand how science and", "storytelling work together"] },
-  { n: "05", t: ["Experience the journey", "from insight to big idea"] },
+  {
+    n: "01",
+    t: ["Master the art of writing briefs", "that inspire great work"],
+    s: "Because a strong healthcare campaign starts with the right question.",
+  },
+  {
+    n: "02",
+    t: ["Learn how to turn", "market research into an insight"],
+    s: "From healthcare audiences to pharma market realities.",
+  },
+  {
+    n: "03",
+    t: ["Master the principles behind", "effective campaign strategy"],
+    s: "Building strategy for complex healthcare and pharma brands.",
+  },
+  {
+    n: "04",
+    t: ["Understand how science and", "storytelling work together"],
+    s: "Turning scientific complexity into communication people understand.",
+  },
+  {
+    n: "05",
+    t: ["Experience the journey", "from insight to big idea"],
+    s: "Where healthcare insight becomes a campaign idea.",
+  },
 ];
+
 
 export function Journey() {
   const ref = useRef<HTMLDivElement>(null);
@@ -131,6 +155,8 @@ export function Journey() {
                 <br />
                 <span className="text-primary">{s.t[1]}</span>
               </h3>
+              <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-foreground/50">{s.s}</p>
+
             </article>
           ))}
         </motion.div>
@@ -141,7 +167,7 @@ export function Journey() {
 
 /* ---------------- SECTION 4 — THE SYNAPSE WAY ---------------- */
 
-const steps = ["Insight", "Strategy", "Storytelling", "Execution", "Big Idea"];
+const steps = ["Science", "Insight", "Strategy", "Storytelling", "Execution", "Impact"];
 
 export function SynapseWay() {
   const ref = useRef<HTMLDivElement>(null);
@@ -153,9 +179,15 @@ export function SynapseWay() {
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
           <h2 className="display max-w-4xl text-[12vw] md:text-[6vw]">
-            How does an idea become <span className="text-primary">a campaign?</span>
+            How does a healthcare or pharma idea become{" "}
+            <span className="text-primary">a campaign?</span>
           </h2>
+          <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+            From clinical evidence and healthcare insights to campaigns that engage doctors,
+            patients, caregivers and health consumers.
+          </p>
         </Reveal>
+
 
         <div ref={ref} className="relative mt-20 pl-10 md:mt-32 md:pl-[22%]">
           <div className="absolute left-1 top-0 h-full w-px bg-hairline md:left-[calc(22%-2.5rem)]">

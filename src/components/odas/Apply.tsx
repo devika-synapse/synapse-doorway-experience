@@ -33,10 +33,17 @@ export function ApplySection({ onApply }: { onApply: () => void }) {
           </h2>
         </Reveal>
         <Reveal delay={0.1}>
+          <p className="mt-10 max-w-xl text-base leading-relaxed text-ink-foreground/60">
+            Step inside Synapse. See how healthcare and pharma brands are built. Meet the people
+            behind the thinking. Experience ODAS.
+          </p>
+        </Reveal>
+        <Reveal delay={0.15}>
           <div className="mt-14 flex flex-col gap-10 border-t border-ink-foreground/12 pt-10 md:flex-row md:items-center md:justify-between">
             <p className="display text-[6vw] text-ink-foreground/60 md:text-[2vw]">
               Come. Be a part of ODAS.
             </p>
+
             <button
               onClick={onApply}
               className="group relative w-full overflow-hidden px-10 py-6 md:w-auto"
