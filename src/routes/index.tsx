@@ -29,8 +29,9 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "One Day at Synapse (ODAS) is an immersive experience inside the thinking, strategy and execution behind marketing campaigns. Step inside and apply.",
+          "One Day at Synapse (ODAS) is an immersive experience inside a healthcare and pharma advertising agency — where science meets strategy and insights become campaigns.",
       },
+
       { property: "og:title", content: "One Day at Synapse — ODAS" },
       {
         property: "og:description",
