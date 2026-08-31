@@ -9,8 +9,18 @@ import {
   ExperienceSynapse,
   BigIdea,
 } from "@/components/odas/Sections";
+import {
+  OfficeGallery,
+  BrandStatement,
+  Ecosystem,
+  People,
+  Leadership,
+  Work,
+  WhySynapse,
+} from "@/components/odas/Healthcare";
 import { ApplySection, ApplyDialog } from "@/components/odas/Apply";
 import { SynapseLogo } from "@/components/odas/SynapseLogo";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
