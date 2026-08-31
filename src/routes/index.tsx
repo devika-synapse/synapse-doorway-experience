@@ -53,11 +53,19 @@ function Index() {
       <Nav onApply={apply} />
       <DoorHero onApply={apply} />
       <WhatIsOdas />
+      <OfficeGallery />
+      <BrandStatement />
       <Journey />
       <SynapseWay />
+      <Ecosystem />
       <ExperienceSynapse />
+      <People />
+      <Leadership />
+      <Work />
+      <WhySynapse />
       <BigIdea />
       <ApplySection onApply={apply} />
+
 
       <footer className="bg-ink px-5 pb-12 text-ink-foreground md:px-10">
         <div className="mx-auto flex max-w-[1600px] flex-col gap-6 border-t border-ink-foreground/12 pt-10 md:flex-row md:items-center md:justify-between">
