@@ -26,10 +26,11 @@ export function Reveal({
 /* ---------------- SECTION 2 — WHAT IS ODAS ---------------- */
 
 const statements = [
-  ["Explore", "AI"],
-  ["Meet specialists", "across functions"],
-  ["Understand", "campaigns"],
-  ["Experience", "execution"],
+  ["See how healthcare", "campaigns are built"],
+  ["See how pharma", "brands are positioned"],
+  ["See how science", "becomes story"],
+  ["See how AI is", "changing healthcare marketing"],
+  ["See how ideas", "move into execution"],
 ];
 
 export function WhatIsOdas() {
@@ -47,12 +48,14 @@ export function WhatIsOdas() {
           <div className="md:col-span-4 md:col-start-8">
             <Reveal delay={0.1}>
               <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
-                One Day at Synapse is an immersive experience designed to take visitors inside the
-                thinking, strategy and execution behind marketing campaigns.
+                One Day at Synapse is an immersive experience inside a healthcare and pharma
+                advertising agency — where science meets strategy, creativity meets technology, and
+                insights become campaigns.
               </p>
             </Reveal>
           </div>
         </div>
+
 
         <ul className="mt-20 border-t border-hairline md:mt-32">
           {statements.map(([a, b], i) => (
