@@ -89,12 +89,33 @@ export function WhatIsOdas() {
 /* ---------------- SECTION 3 — THE JOURNEY ---------------- */
 
 const sessions = [
-  { n: "01", t: ["Master the art of writing briefs", "that inspire great work"] },
-  { n: "02", t: ["Learn how to turn", "market research into an insight"] },
-  { n: "03", t: ["Master the principles behind", "effective campaign strategy"] },
-  { n: "04", t: ["Understand how science and", "storytelling work together"] },
-  { n: "05", t: ["Experience the journey", "from insight to big idea"] },
+  {
+    n: "01",
+    t: ["Master the art of writing briefs", "that inspire great work"],
+    s: "Because a strong healthcare campaign starts with the right question.",
+  },
+  {
+    n: "02",
+    t: ["Learn how to turn", "market research into an insight"],
+    s: "From healthcare audiences to pharma market realities.",
+  },
+  {
+    n: "03",
+    t: ["Master the principles behind", "effective campaign strategy"],
+    s: "Building strategy for complex healthcare and pharma brands.",
+  },
+  {
+    n: "04",
+    t: ["Understand how science and", "storytelling work together"],
+    s: "Turning scientific complexity into communication people understand.",
+  },
+  {
+    n: "05",
+    t: ["Experience the journey", "from insight to big idea"],
+    s: "Where healthcare insight becomes a campaign idea.",
+  },
 ];
+
 
 export function Journey() {
   const ref = useRef<HTMLDivElement>(null);
