@@ -54,7 +54,7 @@ export function DoorHero({ onApply }: { onApply: () => void }) {
           style={{ opacity: welcomeOpacity, y: welcomeY }}
         >
           <p className="eyebrow text-primary">Welcome inside.</p>
-          <h2 className="display mt-6 text-center text-[13vw] leading-[0.85] md:text-[8vw]">
+          <h2 className="display mt-6 text-center text-[9vw] leading-[0.85] md:text-[5.5vw]">
             One Day at
             <br />
             Synapse
@@ -82,7 +82,7 @@ export function DoorHero({ onApply }: { onApply: () => void }) {
         >
           <div className="max-w-3xl">
             <p className="eyebrow text-primary">Synapse Advertising presents</p>
-            <h1 className="display mt-5 text-[13vw] text-ink-foreground md:text-[6.5vw]">
+            <h1 className="display mt-5 text-[9vw] text-ink-foreground md:text-[4.5vw]">
               One Day
               <br />
               at Synapse
@@ -90,7 +90,7 @@ export function DoorHero({ onApply }: { onApply: () => void }) {
           </div>
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="display text-[8vw] text-ink-foreground md:text-[2.4vw]">Step inside.</p>
+              <p className="display text-[5.5vw] text-ink-foreground md:text-[1.8vw]">Step inside.</p>
               <p className="mt-3 max-w-xs text-sm text-ink-foreground/65">
                 An immersive experience inside the world of Synapse.
               </p>

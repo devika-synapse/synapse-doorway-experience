@@ -26,7 +26,7 @@ export function ApplySection({ onApply }: { onApply: () => void }) {
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
           <p className="eyebrow text-primary">One Day at Synapse</p>
-          <h2 className="display mt-6 text-[16vw] md:text-[9vw]">
+          <h2 className="display mt-6 text-[10vw] md:text-[5.5vw]">
             Ready to
             <br />
             step inside?
@@ -40,7 +40,7 @@ export function ApplySection({ onApply }: { onApply: () => void }) {
         </Reveal>
         <Reveal delay={0.15}>
           <div className="mt-14 flex flex-col gap-10 border-t border-ink-foreground/12 pt-10 md:flex-row md:items-center md:justify-between">
-            <p className="display text-[6vw] text-ink-foreground/60 md:text-[2vw]">
+            <p className="display text-[4vw] text-ink-foreground/60 md:text-[1.5vw]">
               Come. Be a part of ODAS.
             </p>
 
@@ -109,12 +109,12 @@ export function ApplyDialog({ open, onClose }: { open: boolean; onClose: () => v
 
             {done ? (
               <div className="py-24 text-center md:py-40">
-                <h2 className="display text-[18vw] text-primary md:text-[9vw]">You&apos;re in.</h2>
+                <h2 className="display text-[11vw] text-primary md:text-[5vw]">You&apos;re in.</h2>
                 <p className="mt-6 text-muted-foreground">We&apos;ll be in touch soon.</p>
               </div>
             ) : (
               <>
-                <h2 className="display mt-8 text-[12vw] md:text-[5vw]">
+                <h2 className="display mt-8 text-[8vw] md:text-[3.4vw]">
                   One Day
                   <br />
                   at Synapse

@@ -25,29 +25,21 @@ export function Reveal({
 
 /* ---------------- SECTION 2 — WHAT IS ODAS ---------------- */
 
-const statements = [
-  ["See how healthcare", "campaigns are built"],
-  ["See how pharma", "brands are positioned"],
-  ["See how science", "becomes story"],
-  ["See how AI is", "changing healthcare marketing"],
-  ["See how ideas", "move into execution"],
-];
-
 export function WhatIsOdas() {
   return (
-    <section id="odas" className="relative bg-background py-28 md:py-44">
+    <section id="odas" className="relative bg-background py-24 md:py-36">
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
-          <h2 className="display text-[14vw] md:text-[8.5vw]">
+          <h2 className="display text-[9vw] md:text-[5.5vw]">
             What happens
             <br />
             inside <span className="text-primary">Synapse?</span>
           </h2>
         </Reveal>
-        <div className="mt-14 grid gap-10 md:mt-24 md:grid-cols-12">
+        <div className="mt-12 grid gap-10 md:mt-20 md:grid-cols-12">
           <div className="md:col-span-4 md:col-start-8">
             <Reveal delay={0.1}>
-              <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
                 One Day at Synapse is an immersive experience inside a healthcare and pharma
                 advertising agency — where science meets strategy, creativity meets technology, and
                 insights become campaigns.
@@ -55,32 +47,6 @@ export function WhatIsOdas() {
             </Reveal>
           </div>
         </div>
-
-
-        <ul className="mt-20 border-t border-hairline md:mt-32">
-          {statements.map(([a, b], i) => (
-            <motion.li
-              key={a}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "-15% 0px" }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              className="group relative overflow-hidden border-b border-hairline py-7 md:py-11"
-            >
-              <div className="flex items-baseline gap-5 md:gap-12">
-                <span className="eyebrow w-8 shrink-0 text-muted-foreground group-hover:text-primary">
-                  0{i + 1}
-                </span>
-                <h3 className="display text-[8vw] transition-transform duration-500 ease-out group-hover:translate-x-2 md:text-[4.4vw]">
-                  <span className="text-foreground">{a} </span>
-                  <span className="text-muted-foreground transition-colors duration-500 group-hover:text-primary">
-                    {b}
-                  </span>
-                </h3>
-              </div>
-            </motion.li>
-          ))}
-        </ul>
       </div>
     </section>
   );
@@ -116,7 +82,6 @@ const sessions = [
   },
 ];
 
-
 export function Journey() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
@@ -128,35 +93,34 @@ export function Journey() {
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
         <div className="px-5 md:px-10">
           <p className="eyebrow text-primary">The journey</p>
-          <h2 className="display mt-4 text-[10vw] md:text-[4.6vw]">
+          <h2 className="display mt-4 text-[6.5vw] md:text-[3.2vw]">
             From a brief <span className="text-ink-foreground/35">to a big idea.</span>
           </h2>
         </div>
 
-        <div className="relative mt-10 h-px w-full bg-ink-foreground/15 md:mt-14">
+        <div className="relative mt-8 h-px w-full bg-ink-foreground/15 md:mt-12">
           <motion.div className="h-px bg-primary" style={{ width: line }} />
         </div>
 
-        <motion.div className="mt-10 flex gap-8 pl-5 md:mt-16 md:gap-24 md:pl-10" style={{ x }}>
+        <motion.div className="mt-8 flex gap-8 pl-5 md:mt-12 md:gap-20 md:pl-10" style={{ x }}>
           {sessions.map((s, i) => (
             <article
               key={s.n}
-              className="w-[78vw] shrink-0 md:w-[44vw]"
-              style={{ transform: `translateY(${(i % 2 ? 1 : -1) * 1.6}vw)` }}
+              className="w-[72vw] shrink-0 md:w-[40vw]"
+              style={{ transform: `translateY(${(i % 2 ? 1 : -1) * 1.4}vw)` }}
             >
               <span
-                className="display block text-[22vw] leading-[0.7] text-transparent md:text-[11vw]"
+                className="display block text-[14vw] leading-[0.7] text-transparent md:text-[7vw]"
                 style={{ WebkitTextStroke: "1px oklch(0.965 0.006 85 / 0.28)" }}
               >
                 {s.n}
               </span>
-              <h3 className="display mt-6 text-[6.5vw] md:text-[2.5vw]">
+              <h3 className="display mt-5 text-[4.5vw] md:text-[1.8vw]">
                 {s.t[0]}
                 <br />
                 <span className="text-primary">{s.t[1]}</span>
               </h3>
-              <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-foreground/50">{s.s}</p>
-
+              <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-foreground/50">{s.s}</p>
             </article>
           ))}
         </motion.div>
@@ -175,21 +139,20 @@ export function SynapseWay() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="bg-background py-28 md:py-44">
+    <section className="bg-background py-24 md:py-36">
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
-          <h2 className="display max-w-4xl text-[12vw] md:text-[6vw]">
+          <h2 className="display max-w-4xl text-[8vw] md:text-[4vw]">
             How does a healthcare or pharma idea become{" "}
             <span className="text-primary">a campaign?</span>
           </h2>
-          <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground md:text-base">
             From clinical evidence and healthcare insights to campaigns that engage doctors,
             patients, caregivers and health consumers.
           </p>
         </Reveal>
 
-
-        <div ref={ref} className="relative mt-20 pl-10 md:mt-32 md:pl-[22%]">
+        <div ref={ref} className="relative mt-16 pl-10 md:mt-28 md:pl-[22%]">
           <div className="absolute left-1 top-0 h-full w-px bg-hairline md:left-[calc(22%-2.5rem)]">
             <motion.div className="w-px bg-primary" style={{ height }} />
           </div>
@@ -200,11 +163,11 @@ export function SynapseWay() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-25% 0px" }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="flex items-baseline gap-6 py-6 md:py-10"
+              className="flex items-baseline gap-6 py-4 md:py-7"
             >
               <span className="eyebrow text-muted-foreground">0{i + 1}</span>
               <h3
-                className={`display text-[10vw] md:text-[5vw] ${
+                className={`display text-[6.5vw] md:text-[3.2vw] ${
                   i === steps.length - 1 ? "text-primary" : "text-foreground"
                 }`}
               >
@@ -231,10 +194,10 @@ const pillars = [
 
 export function ExperienceSynapse() {
   return (
-    <section id="experience" className="bg-ink py-28 text-ink-foreground md:py-44">
+    <section id="experience" className="bg-ink py-24 text-ink-foreground md:py-36">
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <Reveal>
-          <h2 className="display text-[12vw] md:text-[6.5vw]">
+          <h2 className="display text-[8vw] md:text-[4.5vw]">
             Don&apos;t just
             <br />
             learn about it.
@@ -242,16 +205,16 @@ export function ExperienceSynapse() {
             <span className="text-primary">Experience it.</span>
           </h2>
         </Reveal>
-        <div className="mt-16 grid border-t border-ink-foreground/12 md:mt-28 md:grid-cols-3">
+        <div className="mt-14 grid border-t border-ink-foreground/12 md:mt-24 md:grid-cols-3">
           {pillars.map((p, i) => (
             <Reveal
               key={p.t}
               delay={(i % 3) * 0.08}
-              className="border-b border-ink-foreground/12 px-0 py-8 md:border-r md:px-8 md:py-14"
+              className="border-b border-ink-foreground/12 px-0 py-7 md:border-r md:px-8 md:py-12"
             >
               <span className="eyebrow text-gold">0{i + 1}</span>
-              <h3 className="display mt-5 text-[6vw] md:text-[1.8vw]">{p.t}</h3>
-              <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-foreground/55">{p.d}</p>
+              <h3 className="display mt-4 text-[4.5vw] md:text-[1.4vw]">{p.t}</h3>
+              <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-foreground/55">{p.d}</p>
             </Reveal>
           ))}
         </div>
@@ -275,7 +238,7 @@ export function BigIdea() {
     <section ref={ref} className="relative h-[420vh] bg-background">
       <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden px-5">
         <motion.h2
-          className="display absolute text-center text-[9vw] md:text-[4vw]"
+          className="display absolute text-center text-[6vw] md:text-[2.8vw]"
           style={{ opacity: useTransform(scrollYProgress, [0, 0.06, 0.14], [0, 1, 0]) }}
         >
           Every big idea
@@ -288,7 +251,7 @@ export function BigIdea() {
           return (
             <motion.p
               key={b}
-              className="display absolute text-center text-[11vw] md:text-[5vw]"
+              className="display absolute text-center text-[7vw] md:text-[3.2vw]"
               style={{
                 opacity: useTransform(scrollYProgress, [s, s + 0.03, s + 0.07, s + 0.1], [0, 1, 1, 0]),
                 y: useTransform(scrollYProgress, [s, s + 0.1], [30, -30]),
@@ -300,7 +263,7 @@ export function BigIdea() {
         })}
 
         <motion.p
-          className="display absolute text-center text-[22vw] text-primary md:text-[14vw]"
+          className="display absolute text-center text-[14vw] text-primary md:text-[9vw]"
           style={{ opacity: bigOpacity, scale: bigScale }}
         >
           A big idea.
@@ -310,7 +273,7 @@ export function BigIdea() {
           className="absolute inset-0 flex items-center justify-center bg-ink"
           style={{ opacity: yourTurn }}
         >
-          <p className="display text-[20vw] text-ink-foreground md:text-[12vw]">Your turn.</p>
+          <p className="display text-[13vw] text-ink-foreground md:text-[7.5vw]">Your turn.</p>
         </motion.div>
       </div>
     </section>
